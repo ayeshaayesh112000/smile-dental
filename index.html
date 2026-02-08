@@ -1,0 +1,1153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smile Dental Clinic – Trusted Dentist in DHA Karachi (Phase 2) | WhatsApp & Call</title>
+  <meta name="description" content="Smile Dental Clinic in DHA Phase 2 Karachi offers dental implants, teeth whitening, scaling & polishing, and complete dental care. Call or WhatsApp +92 301 3823223 to book an appointment." />
+  <meta name="theme-color" content="#0ea5a4" />
+  <link rel="preconnect" href="https://cdn.tailwindcss.com" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --blue:#4f8ff7;
+      --blue-2:#86b7ff;
+      --green:#0ea5a4;
+      --green-2:#34d399;
+      --ink:#0b1220;
+      --muted:#5b667a;
+      --card:#ffffff;
+      --bg:#f6fbff;
+      --ring: rgba(14,165,164,.28);
+    }
+    html{scroll-behavior:smooth}
+    body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif;color:var(--ink);background:linear-gradient(180deg,#f6fbff 0%, #ffffff 40%, #f7fffe 100%)}
+    .container{max-width:1120px}
+    .glass{
+      background:rgba(255,255,255,.68);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border:1px solid rgba(255,255,255,.7);
+    }
+    .shadow-soft{box-shadow: 0 10px 30px rgba(11,18,32,.08)}
+    .shadow-soft-2{box-shadow: 0 18px 50px rgba(11,18,32,.10)}
+    .btn{
+      display:inline-flex;align-items:center;justify-content:center;gap:.6rem;
+      border-radius:14px;padding:.95rem 1.05rem;
+      font-weight:700;letter-spacing:.2px;
+      transition:transform .12s ease, box-shadow .2s ease, background .2s ease, border-color .2s ease;
+      user-select:none;
+      line-height:1;
+      white-space:nowrap;
+    }
+    .btn:active{transform:translateY(1px) scale(.99)}
+    .btn-primary{
+      background:linear-gradient(135deg,var(--green) 0%, #0fb9b7 40%, var(--green-2) 120%);
+      color:#fff;
+      box-shadow: 0 14px 35px rgba(14,165,164,.25);
+    }
+    .btn-primary:hover{box-shadow: 0 18px 45px rgba(14,165,164,.30)}
+    .btn-secondary{
+      background:#fff;
+      border:1px solid rgba(79,143,247,.22);
+      color:#0b1220;
+      box-shadow: 0 12px 28px rgba(79,143,247,.12);
+    }
+    .btn-secondary:hover{border-color: rgba(79,143,247,.35); box-shadow: 0 16px 40px rgba(79,143,247,.16)}
+    .badge{
+      display:inline-flex;align-items:center;gap:.45rem;
+      background:rgba(79,143,247,.10);
+      border:1px solid rgba(79,143,247,.18);
+      color:#133b8a;
+      padding:.45rem .65rem;
+      border-radius:999px;
+      font-size:.86rem;
+      font-weight:600;
+    }
+    .badge-green{
+      background:rgba(14,165,164,.10);
+      border-color: rgba(14,165,164,.18);
+      color:#0b4f50;
+    }
+    .pill{
+      background:#fff;border:1px solid rgba(11,18,32,.08);
+      border-radius:14px;padding:.85rem .95rem;
+    }
+    .section{padding:64px 0}
+    @media (max-width: 768px){
+      .section{padding:52px 0}
+    }
+    .h1{
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      line-height: 1.04;
+      font-size: clamp(2.0rem, 3.4vw, 3.35rem);
+    }
+    .lead{
+      font-size: clamp(1.02rem, 1.5vw, 1.2rem);
+      color: var(--muted);
+      line-height: 1.6;
+    }
+    .card{
+      background:var(--card);
+      border:1px solid rgba(11,18,32,.08);
+      border-radius:18px;
+    }
+    .card:hover{border-color: rgba(14,165,164,.22)}
+    .service-icon{
+      width:44px;height:44px;border-radius:14px;
+      display:grid;place-items:center;
+      background: linear-gradient(135deg, rgba(79,143,247,.16) 0%, rgba(14,165,164,.12) 100%);
+      border:1px solid rgba(11,18,32,.08);
+    }
+    .icon{
+      width:20px;height:20px;display:inline-block;
+    }
+    .focus-ring:focus{
+      outline:none;
+      box-shadow: 0 0 0 4px var(--ring);
+      border-color: rgba(14,165,164,.55) !important;
+    }
+    .sticky-cta{
+      position:fixed;left:0;right:0;bottom:0;
+      z-index:60;
+      padding:10px 12px;
+      background:rgba(255,255,255,.88);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border-top:1px solid rgba(11,18,32,.08);
+    }
+    .fab-wrap{
+      position:fixed;right:14px;bottom:86px;z-index:65;
+      display:flex;flex-direction:column;gap:10px;
+    }
+    .fab{
+      width:54px;height:54px;border-radius:18px;
+      display:grid;place-items:center;
+      box-shadow: 0 18px 45px rgba(11,18,32,.18);
+      border:1px solid rgba(255,255,255,.7);
+      transition: transform .12s ease, box-shadow .2s ease;
+    }
+    .fab:hover{transform: translateY(-1px)}
+    .fab:active{transform: translateY(0px) scale(.99)}
+    .fab-wa{background: linear-gradient(135deg, #10b981, #22c55e)}
+    .fab-call{background: linear-gradient(135deg, #4f8ff7, #60a5fa)}
+    .skip{
+      position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden;
+    }
+    .skip:focus{
+      left:14px;top:14px;width:auto;height:auto;z-index:100;
+      background:#fff;border:1px solid rgba(11,18,32,.16);padding:.6rem .8rem;border-radius:12px;
+      box-shadow:0 12px 30px rgba(11,18,32,.12);
+    }
+    .grid-soft{
+      background:
+        radial-gradient(900px 260px at 10% 5%, rgba(79,143,247,.20), transparent 60%),
+        radial-gradient(900px 260px at 90% 0%, rgba(14,165,164,.18), transparent 55%),
+        radial-gradient(900px 320px at 85% 40%, rgba(134,183,255,.18), transparent 60%),
+        radial-gradient(900px 320px at 20% 50%, rgba(52,211,153,.10), transparent 60%);
+    }
+    .kicker{
+      font-weight:700;color:#0b4f50;background:rgba(14,165,164,.10);
+      border:1px solid rgba(14,165,164,.18);
+      padding:.35rem .6rem;border-radius:999px;display:inline-flex;align-items:center;gap:.45rem;
+    }
+    .divider{
+      height:1px;background:linear-gradient(90deg, transparent, rgba(11,18,32,.12), transparent);
+    }
+    .toast{
+      position:fixed;top:14px;left:50%;transform:translateX(-50%);
+      z-index:100;
+      max-width:min(560px, calc(100% - 24px));
+      background:rgba(255,255,255,.92);
+      border:1px solid rgba(11,18,32,.10);
+      border-radius:16px;
+      padding:12px 14px;
+      box-shadow: 0 18px 45px rgba(11,18,32,.14);
+      display:none;
+    }
+    .toast.show{display:flex;align-items:flex-start;gap:10px;animation: pop .18s ease-out}
+    @keyframes pop{from{opacity:0;transform:translateX(-50%) translateY(-6px)}to{opacity:1;transform:translateX(-50%) translateY(0)}}
+    .mini{
+      font-size:.92rem;color:var(--muted);
+    }
+    .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Dentist",
+    "name": "Smile Dental Clinic",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Karachi",
+      "addressRegion": "Sindh",
+      "addressCountry": "PK",
+      "streetAddress": "DHA Phase 2, Karachi, Pakistan"
+    },
+    "areaServed": "DHA, Karachi",
+    "telephone": "+923013823223",
+    "url": "https://example.com",
+    "sameAs": [],
+    "priceRange": "$$",
+    "description": "Dental clinic in DHA Phase 2 Karachi providing dental implants, teeth whitening, scaling & polishing, and general dentistry.",
+    "medicalSpecialty": "Dentistry"
+  }
+  </script>
+</head>
+
+<body>
+  <a class="skip focus-ring" href="#appointment">Skip to appointment form</a>
+
+  <!-- Top Bar -->
+  <header class="sticky top-0 z-50">
+    <div class="glass">
+      <div class="container mx-auto px-4">
+        <div class="flex items-center justify-between py-3">
+          <a href="#top" class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-2xl grid place-items-center shadow-soft"
+              style="background:linear-gradient(135deg, rgba(79,143,247,.18), rgba(14,165,164,.18)); border:1px solid rgba(11,18,32,.08);">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M12 3c3.6 0 6.5 2.9 6.5 6.5 0 1.7-.6 3.2-1.7 4.4l-3.3 3.8c-.7.8-1.5 1.3-2.5 1.3s-1.9-.5-2.5-1.3l-3.3-3.8A6.45 6.45 0 0 1 5.5 9.5C5.5 5.9 8.4 3 12 3Z" stroke="#0b4f50" stroke-width="1.6" opacity=".25"/>
+                <path d="M7.7 10.6c.3-1.8 1.9-3.2 3.8-3.2h1c1.9 0 3.5 1.4 3.8 3.2l.5 3.2c.2 1.4-.9 2.7-2.3 2.7H9.5c-1.4 0-2.5-1.3-2.3-2.7l.5-3.2Z" stroke="#0b4f50" stroke-width="1.6"/>
+                <path d="M10 9.8h4" stroke="#0b4f50" stroke-width="1.6" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="leading-tight">
+              <div class="font-extrabold tracking-tight text-[1.05rem]">Smile Dental Clinic</div>
+              <div class="text-[.82rem] text-slate-600">Dentist in DHA Karachi (Phase 2)</div>
+            </div>
+          </a>
+
+          <nav class="hidden md:flex items-center gap-6 text-[.95rem] font-semibold text-slate-700">
+            <a class="hover:text-slate-900" href="#services">Services</a>
+            <a class="hover:text-slate-900" href="#why">Why Us</a>
+            <a class="hover:text-slate-900" href="#reviews">Reviews</a>
+            <a class="hover:text-slate-900" href="#location">Location</a>
+            <a class="btn btn-primary" href="#appointment" aria-label="Book appointment">Book Now</a>
+          </nav>
+
+          <div class="md:hidden flex items-center gap-2">
+            <a class="btn btn-secondary" href="tel:+923013823223" aria-label="Call Smile Dental Clinic">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M6.6 10.2c1.4 3 3.8 5.4 6.8 6.8l2.3-2.3c.4-.4 1-.5 1.5-.3 1 .4 2.1.6 3.2.6.8 0 1.5.7 1.5 1.5V20c0 .8-.7 1.5-1.5 1.5C11.3 21.5 2.5 12.7 2.5 2.6 2.5 1.8 3.2 1 4 1h3.4c.8 0 1.5.7 1.5 1.5 0 1.1.2 2.2.6 3.2.2.5.1 1.1-.3 1.5L6.6 10.2Z" stroke="#0b1220" stroke-width="1.6" stroke-linejoin="round"/>
+              </svg>
+              <span class="hidden xs:inline">Call</span>
+            </a>
+            <a class="btn btn-primary" href="#appointment" aria-label="Open appointment form">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M8 7V5.5C8 4.1 9.1 3 10.5 3h3C14.9 3 16 4.1 16 5.5V7" stroke="#fff" stroke-width="1.6" stroke-linecap="round"/>
+                <path d="M6 7h12a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2Z" stroke="#fff" stroke-width="1.6"/>
+                <path d="M8 12h8M8 16h6" stroke="#fff" stroke-width="1.6" stroke-linecap="round"/>
+              </svg>
+              <span>Book</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="divider"></div>
+    </div>
+  </header>
+
+  <!-- Toast -->
+  <div id="toast" class="toast" role="status" aria-live="polite">
+    <div class="w-9 h-9 rounded-2xl grid place-items-center" style="background:rgba(14,165,164,.12); border:1px solid rgba(14,165,164,.18);">
+      <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M20 6L9 17l-5-5" stroke="#0b4f50" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+    <div class="min-w-0">
+      <div id="toastTitle" class="font-bold">Done</div>
+      <div id="toastMsg" class="mini">We’ll get back to you shortly.</div>
+    </div>
+    <button class="ml-auto text-slate-600 hover:text-slate-900" aria-label="Close notification" onclick="hideToast()">
+      <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+      </svg>
+    </button>
+  </div>
+
+  <!-- Hero -->
+  <main id="top" class="grid-soft">
+    <section class="section pt-12 md:pt-14">
+      <div class="container mx-auto px-4">
+        <div class="grid lg:grid-cols-2 gap-10 items-center">
+          <div>
+            <div class="flex flex-wrap gap-2 items-center mb-4">
+              <span class="kicker">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M12 2.8l2.8 5.7 6.2.9-4.5 4.4 1.1 6.2L12 17.9 6.4 20l1.1-6.2L3 9.4l6.2-.9L12 2.8Z" stroke="#0b4f50" stroke-width="1.6" stroke-linejoin="round"/>
+                  <path d="M12 5.8l1.8 3.7 4.1.6-3 2.9.7 4.1-3.6-1.9-3.6 1.9.7-4.1-3-2.9 4.1-.6L12 5.8Z" fill="#0ea5a4" opacity=".25"/>
+                </svg>
+                ⭐ 5.0 Google rating
+              </span>
+              <span class="badge badge-green">Dentist in DHA Karachi</span>
+              <span class="badge">DHA Phase 2, Karachi</span>
+            </div>
+
+            <h1 class="h1">Trusted Dental Care in DHA Karachi – Smile With Confidence</h1>
+            <p class="lead mt-4 max-w-xl">
+              Dental Implants, Teeth Whitening, Scaling &amp; Complete Dental Care — with a clean, hygienic environment and patient-first approach.
+            </p>
+
+            <div class="mt-6 flex flex-col sm:flex-row gap-3 sm:items-center">
+              <a class="btn btn-primary" id="heroWhatsApp" href="https://wa.me/923013823223?text=Assalam%20o%20Alaikum%20Smile%20Dental%20Clinic%2C%20I%20want%20to%20book%20an%20appointment.%20Service%3A%20%5BPlease%20select%5D%20Preferred%20time%3A%20%5B%5D" target="_blank" rel="noopener" aria-label="Book appointment on WhatsApp">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M20 12a8 8 0 0 1-11.8 7L4 20l1-4.2A8 8 0 1 1 20 12Z" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/>
+                  <path d="M9.2 8.8c-.2-.5-.4-.5-.7-.5h-.6c-.2 0-.5.1-.7.4-.2.3-.9.9-.9 2.2s.9 2.5 1 2.6c.1.2 1.7 2.7 4.2 3.7 2 .8 2.4.6 2.8.6.4-.1 1.3-.6 1.5-1.1.2-.5.2-1 .1-1.1-.1-.1-.2-.2-.5-.3l-1.6-.8c-.2-.1-.4-.1-.6.1l-.7.9c-.1.2-.3.2-.5.1-.2-.1-1-.4-1.9-1.3-.7-.6-1.2-1.5-1.4-1.7-.1-.2 0-.4.1-.5l.5-.6c.1-.1.1-.3.2-.4.1-.1 0-.3 0-.5l-.6-1.5Z" fill="#fff" opacity=".9"/>
+                </svg>
+                Book Appointment on WhatsApp
+              </a>
+              <a class="btn btn-secondary" href="tel:+923013823223" aria-label="Call now to book appointment">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M6.6 10.2c1.4 3 3.8 5.4 6.8 6.8l2.3-2.3c.4-.4 1-.5 1.5-.3 1 .4 2.1.6 3.2.6.8 0 1.5.7 1.5 1.5V20c0 .8-.7 1.5-1.5 1.5C11.3 21.5 2.5 12.7 2.5 2.6 2.5 1.8 3.2 1 4 1h3.4c.8 0 1.5.7 1.5 1.5 0 1.1.2 2.2.6 3.2.2.5.1 1.1-.3 1.5L6.6 10.2Z" stroke="#0b1220" stroke-width="1.6" stroke-linejoin="round"/>
+                </svg>
+                Call Now
+              </a>
+            </div>
+
+            <div class="mt-7 grid grid-cols-2 sm:grid-cols-4 gap-3 max-w-2xl">
+              <div class="pill shadow-soft">
+                <div class="flex items-start gap-2">
+                  <div class="service-icon" style="width:38px;height:38px;border-radius:14px;">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                      <path d="M12 2.8l2.8 5.7 6.2.9-4.5 4.4 1.1 6.2L12 17.9 6.4 20l1.1-6.2L3 9.4l6.2-.9L12 2.8Z" stroke="#0b4f50" stroke-width="1.6" stroke-linejoin="round"/>
+                    </svg>
+                  </div>
+                  <div class="min-w-0">
+                    <div class="font-bold text-[.95rem]">5.0 Rating</div>
+                    <div class="mini">Google reviews</div>
+                  </div>
+                </div>
+              </div>
+              <div class="pill shadow-soft">
+                <div class="flex items-start gap-2">
+                  <div class="service-icon" style="width:38px;height:38px;border-radius:14px;">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                      <path d="M12 21s7-4.4 7-10.5V6.2L12 3 5 6.2v4.3C5 16.6 12 21 12 21Z" stroke="#0b4f50" stroke-width="1.6" stroke-linejoin="round"/>
+                      <path d="M9.5 12.2l1.7 1.7 3.7-4" stroke="#0ea5a4" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </div>
+                  <div class="min-w-0">
+                    <div class="font-bold text-[.95rem]">Hygienic</div>
+                    <div class="mini">Safe environment</div>
+                  </div>
+                </div>
+              </div>
+              <div class="pill shadow-soft">
+                <div class="flex items-start gap-2">
+                  <div class="service-icon" style="width:38px;height:38px;border-radius:14px;">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                      <path d="M12 22s8-4 8-10V6l-8-4-8 4v6c0 6 8 10 8 10Z" stroke="#0b4f50" stroke-width="1.6" stroke-linejoin="round"/>
+                      <path d="M8.6 12.2c.6-1.6 2-2.7 3.6-2.7 2.1 0 3.8 1.8 3.8 4 0 2.1-1.7 3.9-3.8 3.9-1.7 0-3.2-1.2-3.7-2.9" stroke="#0ea5a4" stroke-width="1.7" stroke-linecap="round"/>
+                    </svg>
+                  </div>
+                  <div class="min-w-0">
+                    <div class="font-bold text-[.95rem]">Modern</div>
+                    <div class="mini">Equipment & care</div>
+                  </div>
+                </div>
+              </div>
+              <div class="pill shadow-soft">
+                <div class="flex items-start gap-2">
+                  <div class="service-icon" style="width:38px;height:38px;border-radius:14px;">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                      <path d="M12 21c4.4 0 8-3.6 8-8s-3.6-8-8-8-8 3.6-8 8 3.6 8 8 8Z" stroke="#0b4f50" stroke-width="1.6"/>
+                      <path d="M8.7 13.5c.9 1.2 2.1 1.8 3.3 1.8s2.4-.6 3.3-1.8" stroke="#0ea5a4" stroke-width="1.7" stroke-linecap="round"/>
+                      <path d="M9.4 10.2h.1M14.5 10.2h.1" stroke="#0b4f50" stroke-width="2.2" stroke-linecap="round"/>
+                    </svg>
+                  </div>
+                  <div class="min-w-0">
+                    <div class="font-bold text-[.95rem]">Experienced</div>
+                    <div class="mini">Patient-first</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <p class="mt-5 mini max-w-xl">
+              Looking for a <strong>Dentist in DHA Karachi</strong> with clear guidance and comfortable treatment? Message us on WhatsApp or call now.
+            </p>
+          </div>
+
+          <div class="relative">
+            <div class="card shadow-soft-2 p-5 md:p-6">
+              <div class="flex items-center justify-between gap-3">
+                <div>
+                  <div class="font-extrabold text-[1.1rem]">Fast Appointment Booking</div>
+                  <div class="mini">Best for DHA & nearby residents</div>
+                </div>
+                <span class="badge badge-green">We reply quickly</span>
+              </div>
+
+              <div class="mt-4 grid gap-3">
+                <a class="btn btn-primary w-full" href="#appointment" aria-label="Jump to booking form">
+                  <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="M8 7V5.5C8 4.1 9.1 3 10.5 3h3C14.9 3 16 4.1 16 5.5V7" stroke="#fff" stroke-width="1.6" stroke-linecap="round"/>
+                    <path d="M6 7h12a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2Z" stroke="#fff" stroke-width="1.6"/>
+                    <path d="M8 12h8M8 16h6" stroke="#fff" stroke-width="1.6" stroke-linecap="round"/>
+                  </svg>
+                  Book via Form (30 sec)
+                </a>
+                <a class="btn btn-secondary w-full" href="https://wa.me/923013823223?text=Assalam%20o%20Alaikum%20Smile%20Dental%20Clinic%2C%20I%20want%20to%20book%20an%20appointment.%20Service%3A%20%5B%5D%20Preferred%20time%3A%20%5B%5D" target="_blank" rel="noopener" aria-label="WhatsApp Smile Dental Clinic">
+                  <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="M20 12a8 8 0 0 1-11.8 7L4 20l1-4.2A8 8 0 1 1 20 12Z" stroke="#0b1220" stroke-width="1.6" stroke-linejoin="round"/>
+                    <path d="M9.2 8.8c-.2-.5-.4-.5-.7-.5h-.6c-.2 0-.5.1-.7.4-.2.3-.9.9-.9 2.2s.9 2.5 1 2.6c.1.2 1.7 2.7 4.2 3.7 2 .8 2.4.6 2.8.6.4-.1 1.3-.6 1.5-1.1.2-.5.2-1 .1-1.1-.1-.1-.2-.2-.5-.3l-1.6-.8c-.2-.1-.4-.1-.6.1l-.7.9c-.1.2-.3.2-.5.1-.2-.1-1-.4-1.9-1.3-.7-.6-1.2-1.5-1.4-1.7-.1-.2 0-.4.1-.5l.5-.6c.1-.1.1-.3.2-.4.1-.1 0-.3 0-.5l-.6-1.5Z" fill="#0b1220" opacity=".88"/>
+                  </svg>
+                  WhatsApp (Recommended)
+                </a>
+                <div class="grid grid-cols-2 gap-3">
+                  <a class="btn btn-secondary w-full" href="tel:+923013823223" aria-label="Call Smile Dental Clinic now">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                      <path d="M6.6 10.2c1.4 3 3.8 5.4 6.8 6.8l2.3-2.3c.4-.4 1-.5 1.5-.3 1 .4 2.1.6 3.2.6.8 0 1.5.7 1.5 1.5V20c0 .8-.7 1.5-1.5 1.5C11.3 21.5 2.5 12.7 2.5 2.6 2.5 1.8 3.2 1 4 1h3.4c.8 0 1.5.7 1.5 1.5 0 1.1.2 2.2.6 3.2.2.5.1 1.1-.3 1.5L6.6 10.2Z" stroke="#0b1220" stroke-width="1.6" stroke-linejoin="round"/>
+                    </svg>
+                    Call
+                  </a>
+                  <a class="btn btn-secondary w-full" href="#services" aria-label="View dental services">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                      <path d="M6 4h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Z" stroke="#0b1220" stroke-width="1.6"/>
+                      <path d="M8 9h8M8 13h8M8 17h6" stroke="#0b1220" stroke-width="1.6" stroke-linecap="round"/>
+                    </svg>
+                    Services
+                  </a>
+                </div>
+
+                <div class="mt-1 rounded-2xl p-4" style="background:linear-gradient(135deg, rgba(79,143,247,.12), rgba(14,165,164,.10)); border:1px solid rgba(11,18,32,.08);">
+                  <div class="font-bold">Local Searches We Help With</div>
+                  <div class="mini mt-1">
+                    Dentist in DHA Karachi • Dental clinic DHA Phase 2 • Teeth whitening Karachi • Dental implants Karachi
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="absolute -z-10 inset-0 blur-3xl opacity-60" aria-hidden="true"
+              style="background: radial-gradient(circle at 35% 30%, rgba(79,143,247,.35), transparent 55%),
+                     radial-gradient(circle at 75% 65%, rgba(14,165,164,.30), transparent 55%);">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="section">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4">
+          <div>
+            <div class="badge badge-green">Dental Services</div>
+            <h2 class="mt-3 text-3xl md:text-4xl font-extrabold tracking-tight">Complete care for a healthier smile</h2>
+            <p class="lead mt-3 max-w-2xl">
+              Whether you need <strong>teeth whitening in Karachi</strong>, a routine cleaning, or advanced care like <strong>dental implants in Karachi</strong>, we focus on comfort, clarity, and clean clinical standards.
+            </p>
+          </div>
+          <div class="flex gap-3">
+            <a class="btn btn-primary" href="https://wa.me/923013823223?text=Assalam%20o%20Alaikum%20Smile%20Dental%20Clinic%2C%20I%20want%20a%20consultation.%20Service%3A%20%5B%5D%20Preferred%20time%3A%20%5B%5D" target="_blank" rel="noopener">WhatsApp Consultation</a>
+            <a class="btn btn-secondary" href="#appointment">Book Form</a>
+          </div>
+        </div>
+
+        <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          <!-- Implants -->
+          <article class="card p-6 shadow-soft hover:shadow-soft-2 transition">
+            <div class="flex items-start justify-between gap-4">
+              <div class="service-icon">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M7.5 9.8c.4-2.4 2.4-4.3 4.9-4.3h.7c2.5 0 4.6 1.9 4.9 4.3l.7 4.7c.3 2.1-1.3 4-3.4 4H9.2c-2.1 0-3.7-1.9-3.4-4l.7-4.7Z" stroke="#0b1220" stroke-width="1.6"/>
+                  <path d="M11 18.5v3M13 18.5v3" stroke="#0ea5a4" stroke-width="1.8" stroke-linecap="round"/>
+                  <path d="M10.2 21.5h3.6" stroke="#0ea5a4" stroke-width="1.8" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <span class="badge">Dental implants Karachi</span>
+            </div>
+            <h3 class="mt-4 text-xl font-extrabold">Dental Implants</h3>
+            <p class="mini mt-2">
+              Replace missing teeth with strong, natural-looking results—guided step-by-step so you know what to expect.
+            </p>
+            <div class="mt-5">
+              <a class="btn btn-primary w-full" href="#appointment" data-service="Dental Implants">👉 Get Consultation</a>
+            </div>
+          </article>
+
+          <!-- Whitening -->
+          <article class="card p-6 shadow-soft hover:shadow-soft-2 transition">
+            <div class="flex items-start justify-between gap-4">
+              <div class="service-icon">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M8 6.5c.7-1.9 2.4-3.2 4.4-3.2s3.7 1.3 4.4 3.2" stroke="#0b1220" stroke-width="1.6" stroke-linecap="round"/>
+                  <path d="M7.7 10.4c.4-2.3 2.4-4.1 4.8-4.1h.9c2.4 0 4.4 1.8 4.8 4.1l.6 3.7c.3 2.2-1.4 4.2-3.6 4.2H9.7c-2.2 0-3.9-2-3.6-4.2l.6-3.7Z" stroke="#0b1220" stroke-width="1.6"/>
+                  <path d="M12 10.1v4.6" stroke="#0ea5a4" stroke-width="1.8" stroke-linecap="round"/>
+                  <path d="M9.8 12.4H14.2" stroke="#0ea5a4" stroke-width="1.8" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <span class="badge">Teeth whitening Karachi</span>
+            </div>
+            <h3 class="mt-4 text-xl font-extrabold">Teeth Whitening</h3>
+            <p class="mini mt-2">
+              Brighten your smile safely with professional whitening—ideal for events, photos, and everyday confidence.
+            </p>
+            <div class="mt-5">
+              <a class="btn btn-primary w-full" href="#appointment" data-service="Teeth Whitening">👉 Get Consultation</a>
+            </div>
+          </article>
+
+          <!-- Scaling -->
+          <article class="card p-6 shadow-soft hover:shadow-soft-2 transition">
+            <div class="flex items-start justify-between gap-4">
+              <div class="service-icon">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M7.7 10.4c.4-2.3 2.4-4.1 4.8-4.1h.9c2.4 0 4.4 1.8 4.8 4.1l.6 3.7c.3 2.2-1.4 4.2-3.6 4.2H9.7c-2.2 0-3.9-2-3.6-4.2l.6-3.7Z" stroke="#0b1220" stroke-width="1.6"/>
+                  <path d="M6.2 7.2c1.1.3 2.4.5 3.9.5 1.6 0 3-.2 4.1-.6" stroke="#0ea5a4" stroke-width="1.7" stroke-linecap="round"/>
+                  <path d="M16.8 8.8l1.8-1.8" stroke="#0b1220" stroke-width="1.6" stroke-linecap="round"/>
+                  <path d="M18.2 10.6l2.3-.7" stroke="#0b1220" stroke-width="1.6" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <span class="badge">Fresh breath</span>
+            </div>
+            <h3 class="mt-4 text-xl font-extrabold">Scaling &amp; Polishing</h3>
+            <p class="mini mt-2">
+              Remove plaque and stains to support healthier gums, fresher breath, and a cleaner smile.
+            </p>
+            <div class="mt-5">
+              <a class="btn btn-primary w-full" href="#appointment" data-service="Scaling & Polishing">👉 Get Consultation</a>
+            </div>
+          </article>
+
+          <!-- General Dentistry -->
+          <article class="card p-6 shadow-soft hover:shadow-soft-2 transition">
+            <div class="flex items-start justify-between gap-4">
+              <div class="service-icon">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M12 21s7-4.4 7-10.5V6.2L12 3 5 6.2v4.3C5 16.6 12 21 12 21Z" stroke="#0b1220" stroke-width="1.6" stroke-linejoin="round"/>
+                  <path d="M9.5 12h5" stroke="#0ea5a4" stroke-width="1.8" stroke-linecap="round"/>
+                  <path d="M12 9.5v5" stroke="#0ea5a4" stroke-width="1.8" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <span class="badge">Family care</span>
+            </div>
+            <h3 class="mt-4 text-xl font-extrabold">General Dentistry</h3>
+            <p class="mini mt-2">
+              Checkups, fillings, gum care, and ongoing treatment plans—clear options and practical next steps.
+            </p>
+            <div class="mt-5">
+              <a class="btn btn-primary w-full" href="#appointment" data-service="General Dentistry">👉 Get Consultation</a>
+            </div>
+          </article>
+
+          <!-- Pain-free -->
+          <article class="card p-6 shadow-soft hover:shadow-soft-2 transition lg:col-span-2">
+            <div class="flex items-start justify-between gap-4">
+              <div class="service-icon">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M12 21c4.4 0 8-3.6 8-8s-3.6-8-8-8-8 3.6-8 8 3.6 8 8 8Z" stroke="#0b1220" stroke-width="1.6"/>
+                  <path d="M9.2 14.1c.7.9 1.7 1.4 2.8 1.4s2.1-.5 2.8-1.4" stroke="#0ea5a4" stroke-width="1.7" stroke-linecap="round"/>
+                  <path d="M9.6 10.2h.1M14.3 10.2h.1" stroke="#0b1220" stroke-width="2.2" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <span class="badge badge-green">Comfort-focused</span>
+            </div>
+            <h3 class="mt-4 text-xl font-extrabold">Pain-free Dental Treatments</h3>
+            <p class="mini mt-2 max-w-2xl">
+              Nervous about dental visits? We explain each step, prioritize comfort, and aim for gentle, controlled treatment—especially for sensitive patients.
+            </p>
+            <div class="mt-5 flex flex-col sm:flex-row gap-3">
+              <a class="btn btn-primary w-full" href="#appointment" data-service="Pain-free Dental Treatments">👉 Get Consultation</a>
+              <a class="btn btn-secondary w-full" href="https://wa.me/923013823223?text=Assalam%20o%20Alaikum%20Smile%20Dental%20Clinic%2C%20I%20am%20anxious%20about%20treatment%20and%20want%20a%20comfort-focused%20appointment.%20Preferred%20time%3A%20%5B%5D" target="_blank" rel="noopener">Discuss on WhatsApp</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section id="why" class="section">
+      <div class="container mx-auto px-4">
+        <div class="card p-6 md:p-8 shadow-soft-2">
+          <div class="grid lg:grid-cols-2 gap-8 items-start">
+            <div>
+              <div class="badge badge-green">Why Choose Us</div>
+              <h2 class="mt-3 text-3xl md:text-4xl font-extrabold tracking-tight">A DHA-based dental clinic built on trust</h2>
+              <p class="lead mt-3">
+                If you’re searching for a <strong>dental clinic DHA Phase 2</strong> that’s clean, professional, and easy to contact—this is designed for you.
+              </p>
+
+              <div class="mt-6 grid gap-3">
+                <div class="flex gap-3 items-start pill">
+                  <div class="service-icon" style="width:42px;height:42px;">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                      <path d="M12 21s7-4.4 7-10.5V6.2L12 3 5 6.2v4.3C5 16.6 12 21 12 21Z" stroke="#0b1220" stroke-width="1.6" stroke-linejoin="round"/>
+                      <path d="M10 12h4" stroke="#0ea5a4" stroke-width="1.8" stroke-linecap="round"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="font-bold">DHA-based clinic</div>
+                    <div class="mini">Convenient for DHA & nearby areas in Karachi</div>
+                  </div>
+                </div>
+
+                <div class="flex gap-3 items-start pill">
+                  <div class="service-icon" style="width:42px;height:42px;">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                      <path d="M12 2l8 4.6v6.8c0 5.1-3.4 9.6-8 10.6-4.6-1-8-5.5-8-10.6V6.6L12 2Z" stroke="#0b1220" stroke-width="1.6" stroke-linejoin="round"/>
+                      <path d="M8.8 12.1l2 2 4.4-4.4" stroke="#0ea5a4" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="font-bold">Modern sterilization</div>
+                    <div class="mini">Clean tools, safe protocols, and tidy treatment areas</div>
+                  </div>
+                </div>
+
+                <div class="flex gap-3 items-start pill">
+                  <div class="service-icon" style="width:42px;height:42px;">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                      <path d="M7 20h10a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-2.2a2.8 2.8 0 0 1-5.6 0H7a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2Z" stroke="#0b1220" stroke-width="1.6"/>
+                      <path d="M9 13h6" stroke="#0ea5a4" stroke-width="1.8" stroke-linecap="round"/>
+                      <path d="M9 16h4" stroke="#0ea5a4" stroke-width="1.8" stroke-linecap="round"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="font-bold">Affordable pricing</div>
+                    <div class="mini">Clear guidance and options—no confusing surprises</div>
+                  </div>
+                </div>
+
+                <div class="flex gap-3 items-start pill">
+                  <div class="service-icon" style="width:42px;height:42px;">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                      <path d="M20 12a8 8 0 1 1-16 0 8 8 0 0 1 16 0Z" stroke="#0b1220" stroke-width="1.6"/>
+                      <path d="M8.5 12.4c.9 1.2 2.1 1.8 3.5 1.8s2.6-.6 3.5-1.8" stroke="#0ea5a4" stroke-width="1.7" stroke-linecap="round"/>
+                      <path d="M9.2 10.1h.1M14.7 10.1h.1" stroke="#0b1220" stroke-width="2.2" stroke-linecap="round"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="font-bold">Patient-first approach</div>
+                    <div class="mini">We explain. You decide. Comfort is prioritized.</div>
+                  </div>
+                </div>
+
+                <div class="flex gap-3 items-start pill">
+                  <div class="service-icon" style="width:42px;height:42px;">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                      <path d="M12 21c4.4 0 8-3.6 8-8s-3.6-8-8-8-8 3.6-8 8 3.6 8 8 8Z" stroke="#0b1220" stroke-width="1.6"/>
+                      <path d="M12 7v6l4 2" stroke="#0ea5a4" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="font-bold">Pain-free procedures</div>
+                    <div class="mini">Gentle care with a calm, reassuring process</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="rounded-3xl p-6 md:p-7 shadow-soft" style="background:linear-gradient(135deg, rgba(79,143,247,.12), rgba(14,165,164,.10)); border:1px solid rgba(11,18,32,.08);">
+              <div class="flex items-center justify-between gap-3">
+                <div>
+                  <div class="font-extrabold text-xl">Need help choosing a service?</div>
+                  <div class="mini mt-1">Tell us your concern. We’ll guide you on the next step.</div>
+                </div>
+                <span class="badge badge-green">DHA Phase 2</span>
+              </div>
+
+              <div class="mt-5 grid gap-3">
+                <button class="btn btn-secondary w-full" onclick="quickFill('Not sure / Need guidance')">
+                  I’m not sure — guide me
+                </button>
+                <button class="btn btn-secondary w-full" onclick="quickFill('Tooth pain / urgent')">
+                  Tooth pain — need urgent help
+                </button>
+                <button class="btn btn-secondary w-full" onclick="quickFill('Cleaning (Scaling & Polishing)')">
+                  I want scaling & polishing
+                </button>
+                <a class="btn btn-primary w-full" href="#appointment">Book My Appointment</a>
+
+                <div class="mt-1 mini">
+                  Prefer WhatsApp? <a class="font-bold underline" href="https://wa.me/923013823223?text=Assalam%20o%20Alaikum%20Smile%20Dental%20Clinic%2C%20I%20need%20guidance%20for%20my%20dental%20issue.%20My%20main%20concern%3A%20%5B%5D%20Preferred%20time%3A%20%5B%5D" target="_blank" rel="noopener">Message us here</a>.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Social Proof -->
+    <section id="reviews" class="section">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4">
+          <div>
+            <div class="badge badge-green">Social Proof</div>
+            <h2 class="mt-3 text-3xl md:text-4xl font-extrabold tracking-tight">Patients come back for clean work and clear guidance</h2>
+            <p class="lead mt-3 max-w-2xl">
+              A calm clinic experience matters—especially if you’ve delayed treatment. Here are patient-style reviews that reflect what people commonly value: comfort, hygiene, and honesty.
+            </p>
+          </div>
+          <div class="flex flex-col items-start md:items-end gap-2">
+            <div class="flex items-center gap-2">
+              <span class="badge badge-green">⭐ 5.0 Google rating</span>
+              <span class="badge">100+ Happy Smiles</span>
+            </div>
+            <div class="mini">Call/WhatsApp for an appointment today.</div>
+          </div>
+        </div>
+
+        <div class="mt-10 grid md:grid-cols-3 gap-5">
+          <figure class="card p-6 shadow-soft">
+            <div class="flex items-center gap-2">
+              <span class="badge badge-green">⭐ ⭐ ⭐ ⭐ ⭐</span>
+              <span class="mini">DHA, Karachi</span>
+            </div>
+            <blockquote class="mt-4 text-slate-800 font-semibold leading-relaxed">
+              “Clean clinic, very professional. The dentist explained everything clearly and the scaling was comfortable.”
+            </blockquote>
+            <figcaption class="mt-4 mini">— Patient review</figcaption>
+          </figure>
+
+          <figure class="card p-6 shadow-soft">
+            <div class="flex items-center gap-2">
+              <span class="badge badge-green">⭐ ⭐ ⭐ ⭐ ⭐</span>
+              <span class="mini">Phase 2 area</span>
+            </div>
+            <blockquote class="mt-4 text-slate-800 font-semibold leading-relaxed">
+              “I messaged on WhatsApp and got a quick response. Appointment was on time and the environment felt hygienic.”
+            </blockquote>
+            <figcaption class="mt-4 mini">— Patient review</figcaption>
+          </figure>
+
+          <figure class="card p-6 shadow-soft">
+            <div class="flex items-center gap-2">
+              <span class="badge badge-green">⭐ ⭐ ⭐ ⭐ ⭐</span>
+              <span class="mini">Nearby DHA</span>
+            </div>
+            <blockquote class="mt-4 text-slate-800 font-semibold leading-relaxed">
+              “I was anxious, but the dentist was gentle and reassuring. Really appreciated the patient-first approach.”
+            </blockquote>
+            <figcaption class="mt-4 mini">— Patient review</figcaption>
+          </figure>
+        </div>
+
+        <div class="mt-7 card p-5 md:p-6 shadow-soft">
+          <div class="flex flex-col md:flex-row gap-4 md:items-center md:justify-between">
+            <div class="flex items-start gap-3">
+              <div class="w-11 h-11 rounded-2xl grid place-items-center"
+                   style="background:rgba(79,143,247,.12); border:1px solid rgba(79,143,247,.18);">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" stroke="#0b1220" stroke-width="1.6"/>
+                  <path d="M7.7 10.6h2.7v2.7H7.7zM13.6 10.6h2.7v2.7h-2.7z" fill="#0ea5a4" opacity=".25" stroke="#0ea5a4" stroke-width="1.2"/>
+                  <path d="M7.7 15.3h8.6" stroke="#0b1220" stroke-width="1.6" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <div>
+                <div class="font-extrabold text-lg">Want to share a review?</div>
+                <div class="mini mt-1">Your feedback helps people find a trusted dentist in DHA Karachi.</div>
+              </div>
+            </div>
+            <div class="flex flex-col sm:flex-row gap-3">
+              <a class="btn btn-primary" href="https://wa.me/923013823223?text=Assalam%20o%20Alaikum%20Smile%20Dental%20Clinic%2C%20I%20visited%20and%20want%20to%20share%20feedback%3A%20%5B%5D" target="_blank" rel="noopener">Send Feedback on WhatsApp</a>
+              <a class="btn btn-secondary" href="#appointment">Book Again</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Doctor / Clinic Trust -->
+    <section id="clinic" class="section">
+      <div class="container mx-auto px-4">
+        <div class="grid lg:grid-cols-2 gap-8 items-center">
+          <div class="card p-6 md:p-8 shadow-soft-2">
+            <div class="badge badge-green">Clinic Trust</div>
+            <h2 class="mt-3 text-3xl md:text-4xl font-extrabold tracking-tight">Smile Dental Clinic — clean, calm, professional care</h2>
+            <p class="lead mt-3">
+              We focus on safe hygiene standards, careful consultation, and a comfortable patient experience. If you’re comparing a <strong>dental clinic DHA Phase 2</strong>, contact us and we’ll guide you on the best next step.
+            </p>
+
+            <div class="mt-6 grid sm:grid-cols-2 gap-4">
+              <div class="pill">
+                <div class="font-bold">Professional Environment</div>
+                <div class="mini mt-1">A clean setup designed for patient comfort</div>
+              </div>
+              <div class="pill">
+                <div class="font-bold">Clear Consultation</div>
+                <div class="mini mt-1">Understand options before starting treatment</div>
+              </div>
+              <div class="pill">
+                <div class="font-bold">Modern Equipment</div>
+                <div class="mini mt-1">Updated tools for smoother procedures</div>
+              </div>
+              <div class="pill">
+                <div class="font-bold">Patient-first Care</div>
+                <div class="mini mt-1">Comfort-focused, gentle approach</div>
+              </div>
+            </div>
+
+            <div class="mt-6 flex flex-col sm:flex-row gap-3">
+              <a class="btn btn-primary" href="https://wa.me/923013823223?text=Assalam%20o%20Alaikum%20Smile%20Dental%20Clinic%2C%20I%20want%20to%20book%20an%20appointment.%20Service%3A%20%5B%5D%20Preferred%20time%3A%20%5B%5D" target="_blank" rel="noopener">WhatsApp Now</a>
+              <a class="btn btn-secondary" href="tel:+923013823223">Call +92 301 3823223</a>
+            </div>
+          </div>
+
+          <div class="grid gap-5">
+            <div class="card p-5 shadow-soft">
+              <div class="flex items-center justify-between">
+                <div class="font-extrabold">Clinic Photos</div>
+                <span class="mini">Placeholders</span>
+              </div>
+              <div class="mt-4 grid grid-cols-3 gap-3">
+                <div class="rounded-2xl h-24 md:h-28" style="background:linear-gradient(135deg, rgba(79,143,247,.14), rgba(14,165,164,.12)); border:1px dashed rgba(11,18,32,.18);"></div>
+                <div class="rounded-2xl h-24 md:h-28" style="background:linear-gradient(135deg, rgba(14,165,164,.12), rgba(134,183,255,.16)); border:1px dashed rgba(11,18,32,.18);"></div>
+                <div class="rounded-2xl h-24 md:h-28" style="background:linear-gradient(135deg, rgba(134,183,255,.16), rgba(14,165,164,.10)); border:1px dashed rgba(11,18,32,.18);"></div>
+              </div>
+              <div class="mini mt-3">
+                Tip: Replace these with real clinic images (reception, sterilization area, chair, signage) for stronger trust.
+              </div>
+            </div>
+
+            <div class="card p-5 shadow-soft">
+              <div class="flex items-start gap-3">
+                <div class="w-11 h-11 rounded-2xl grid place-items-center"
+                  style="background:rgba(14,165,164,.10); border:1px solid rgba(14,165,164,.18);">
+                  <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="M12 21s7-4.4 7-10.5V6.2L12 3 5 6.2v4.3C5 16.6 12 21 12 21Z" stroke="#0b1220" stroke-width="1.6" stroke-linejoin="round"/>
+                    <path d="M9.6 12.2l1.7 1.7 3.8-4" stroke="#0ea5a4" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+                <div>
+                  <div class="font-extrabold">Hygiene & Safety Focus</div>
+                  <div class="mini mt-1">We keep the environment clean and follow sterilization practices to support safe dental care.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Appointment Form -->
+    <section id="appointment" class="section">
+      <div class="container mx-auto px-4">
+        <div class="grid lg:grid-cols-2 gap-8 items-start">
+          <div>
+            <div class="badge badge-green">Appointment</div>
+            <h2 class="mt-3 text-3xl md:text-4xl font-extrabold tracking-tight">Book your appointment in under a minute</h2>
+            <p class="lead mt-3 max-w-xl">
+              Fill the form and we’ll confirm your slot. For fastest response, use WhatsApp.
+            </p>
+
+            <div class="mt-6 card p-6 md:p-7 shadow-soft-2">
+              <form id="leadForm" class="grid gap-4" autocomplete="on">
+                <div>
+                  <label class="font-bold text-[.95rem]" for="name">Name</label>
+                  <input id="name" name="name" class="mt-2 w-full rounded-2xl border px-4 py-3 focus-ring"
+                    style="border-color: rgba(11,18,32,.14);" placeholder="Your full name" required />
+                </div>
+
+                <div>
+                  <label class="font-bold text-[.95rem]" for="phone">Phone / WhatsApp</label>
+                  <input id="phone" name="phone" class="mt-2 w-full rounded-2xl border px-4 py-3 focus-ring"
+                    style="border-color: rgba(11,18,32,.14);" placeholder="+92 3XX XXXXXXX" inputmode="tel" required />
+                </div>
+
+                <div>
+                  <label class="font-bold text-[.95rem]" for="service">Service Needed</label>
+                  <select id="service" name="service" class="mt-2 w-full rounded-2xl border px-4 py-3 focus-ring bg-white"
+                    style="border-color: rgba(11,18,32,.14);" required>
+                    <option value="" selected disabled>Select a service</option>
+                    <option>Dental Implants</option>
+                    <option>Teeth Whitening</option>
+                    <option>Scaling & Polishing</option>
+                    <option>General Dentistry</option>
+                    <option>Pain-free Dental Treatments</option>
+                    <option>Not sure / Need guidance</option>
+                    <option>Tooth pain / urgent</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label class="font-bold text-[.95rem]" for="time">Preferred Time</label>
+                  <input id="time" name="time" class="mt-2 w-full rounded-2xl border px-4 py-3 focus-ring"
+                    style="border-color: rgba(11,18,32,.14);" placeholder="Today evening / Tomorrow 6–8pm" required />
+                </div>
+
+                <button class="btn btn-primary w-full" type="submit">
+                  <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="M8 7V5.5C8 4.1 9.1 3 10.5 3h3C14.9 3 16 4.1 16 5.5V7" stroke="#fff" stroke-width="1.6" stroke-linecap="round"/>
+                    <path d="M6 7h12a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2Z" stroke="#fff" stroke-width="1.6"/>
+                    <path d="M8 12h8M8 16h6" stroke="#fff" stroke-width="1.6" stroke-linecap="round"/>
+                  </svg>
+                  Book My Appointment
+                </button>
+
+                <div class="mini">
+                  We respond within <strong>30 minutes</strong> on WhatsApp.
+                </div>
+
+                <div class="divider my-1"></div>
+
+                <div class="grid sm:grid-cols-2 gap-3">
+                  <a class="btn btn-secondary w-full" href="tel:+923013823223" aria-label="Call Smile Dental Clinic">Call Now</a>
+                  <a class="btn btn-secondary w-full" id="formWhatsApp" href="https://wa.me/923013823223?text=Assalam%20o%20Alaikum%20Smile%20Dental%20Clinic%2C%20I%20want%20to%20book%20an%20appointment.%20Name%3A%20%5B%5D%20Phone%3A%20%5B%5D%20Service%3A%20%5B%5D%20Preferred%20time%3A%20%5B%5D" target="_blank" rel="noopener">Send Details on WhatsApp</a>
+                </div>
+
+                <p class="mini">
+                  By submitting, you agree we may contact you on phone/WhatsApp for appointment confirmation.
+                </p>
+              </form>
+            </div>
+          </div>
+
+          <aside class="grid gap-5">
+            <div class="card p-6 shadow-soft">
+              <div class="font-extrabold text-xl">Quick Contact</div>
+              <div class="mt-3 grid gap-3">
+                <a class="btn btn-primary w-full" href="https://wa.me/923013823223?text=Assalam%20o%20Alaikum%20Smile%20Dental%20Clinic%2C%20please%20share%20the%20next%20available%20appointment%20in%20DHA%20Phase%202.%20Service%3A%20%5B%5D" target="_blank" rel="noopener">WhatsApp: Book Appointment</a>
+                <a class="btn btn-secondary w-full" href="tel:+923013823223">Call: +92 301 3823223</a>
+              </div>
+              <div class="mt-4 rounded-2xl p-4" style="background:rgba(79,143,247,.10); border:1px solid rgba(79,143,247,.18);">
+                <div class="font-bold">Good to know</div>
+                <ul class="mt-2 mini list-disc pl-5">
+                  <li>We keep the process simple and explain options clearly.</li>
+                  <li>Comfort-focused approach for anxious patients.</li>
+                  <li>Ideal for DHA residents searching “Dentist in DHA Karachi”.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="card p-6 shadow-soft">
+              <div class="font-extrabold text-xl">Common Reasons Patients Visit</div>
+              <div class="mt-3 grid gap-3">
+                <button class="btn btn-secondary w-full" onclick="quickFill('Scaling & Polishing')">Gum bleeding / cleaning</button>
+                <button class="btn btn-secondary w-full" onclick="quickFill('Teeth Whitening')">Stains / whitening</button>
+                <button class="btn btn-secondary w-full" onclick="quickFill('General Dentistry')">Checkup / fillings</button>
+                <button class="btn btn-secondary w-full" onclick="quickFill('Dental Implants')">Missing tooth replacement</button>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- Location & Contact -->
+    <section id="location" class="section">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4">
+          <div>
+            <div class="badge badge-green">Location & Contact</div>
+            <h2 class="mt-3 text-3xl md:text-4xl font-extrabold tracking-tight">Visit Smile Dental Clinic in DHA Phase 2, Karachi</h2>
+            <p class="lead mt-3 max-w-2xl">
+              If you’re nearby and need a <strong>dental clinic DHA Phase 2</strong>, contact us now for the next available appointment.
+            </p>
+          </div>
+          <div class="flex flex-col sm:flex-row gap-3">
+            <a class="btn btn-primary" href="https://wa.me/923013823223?text=Assalam%20o%20Alaikum%20Smile%20Dental%20Clinic%2C%20I%20need%20location%20guidance%20for%20DHA%20Phase%202.%20My%20name%3A%20%5B%5D" target="_blank" rel="noopener">WhatsApp for Directions</a>
+            <a class="btn btn-secondary" href="tel:+923013823223">Call Clinic</a>
+          </div>
+        </div>
+
+        <div class="mt-10 grid lg:grid-cols-2 gap-6 items-start">
+          <div class="card p-6 md:p-7 shadow-soft-2">
+            <div class="grid gap-4">
+              <div>
+                <div class="font-extrabold text-lg">Address</div>
+                <div class="mini mt-1">DHA Phase 2, Karachi, Pakistan</div>
+              </div>
+
+              <div class="divider"></div>
+
+              <div class="grid sm:grid-cols-2 gap-4">
+                <div class="pill">
+                  <div class="font-bold">Phone / WhatsApp</div>
+                  <a class="mt-1 inline-block font-extrabold underline" href="tel:+923013823223">+92 301 3823223</a>
+                  <div class="mini mt-1">Tap to call</div>
+                </div>
+                <div class="pill">
+                  <div class="font-bold">WhatsApp</div>
+                  <a class="mt-1 inline-block font-extrabold underline" target="_blank" rel="noopener"
+                     href="https://wa.me/923013823223?text=Assalam%20o%20Alaikum%20Smile%20Dental%20Clinic%2C%20I%20want%20to%20book%20an%20appointment.%20Service%3A%20%5B%5D%20Preferred%20time%3A%20%5B%5D">Message to book</a>
+                  <div class="mini mt-1">Fastest response</div>
+                </div>
+              </div>
+
+              <div class="rounded-2xl p-4" style="background:rgba(14,165,164,.08); border:1px solid rgba(14,165,164,.16);">
+                <div class="font-bold">Local SEO Keywords (Naturally Used)</div>
+                <div class="mini mt-1">
+                  Dentist in DHA Karachi • Dental clinic DHA Phase 2 • Teeth whitening Karachi • Dental implants Karachi
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card overflow-hidden shadow-soft-2" style="border:1px solid rgba(11,18,32,.08); border-radius:18px;">
+            <div class="p-4 md:p-5 flex items-center justify-between">
+              <div>
+                <div class="font-extrabold">Google Map</div>
+                <div class="mini">DHA Phase 2, Karachi (embed)</div>
+              </div>
+              <a class="btn btn-secondary" target="_blank" rel="noopener"
+                 href="https://www.google.com/maps/search/?api=1&query=DHA%20Phase%202%2C%20Karachi%2C%20Pakistan">
+                Open in Maps
+              </a>
+            </div>
+            <iframe
+              title="Smile Dental Clinic Location Map"
+              src="https://www.google.com/maps?q=DHA%20Phase%202%2C%20Karachi%2C%20Pakistan&output=embed"
+              width="100%" height="360" style="border:0;"
+              loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="pb-28 md:pb-10">
+      <div class="container mx-auto px-4">
+        <div class="card p-6 md:p-7 shadow-soft">
+          <div class="flex flex-col md:flex-row gap-6 md:items-center md:justify-between">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-2xl grid place-items-center shadow-soft"
+                style="background:linear-gradient(135deg, rgba(79,143,247,.18), rgba(14,165,164,.18)); border:1px solid rgba(11,18,32,.08);">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M7.7 10.4c.4-2.3 2.4-4.1 4.8-4.1h.9c2.4 0 4.4 1.8 4.8 4.1l.6 3.7c.3 2.2-1.4 4.2-3.6 4.2H9.7c-2.2 0-3.9-2-3.6-4.2l.6-3.7Z" stroke="#0b1220" stroke-width="1.6"/>
+                  <path d="M12 3.2v1.5" stroke="#0ea5a4" stroke-width="1.8" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <div>
+                <div class="font-extrabold">Smile Dental Clinic</div>
+                <div class="mini">DHA Phase 2, Karachi, Pakistan • Call/WhatsApp: <a class="underline font-bold" href="tel:+923013823223">+92 301 3823223</a></div>
+              </div>
+            </div>
+            <div class="flex flex-col sm:flex-row gap-3">
+              <a class="btn btn-primary" href="https://wa.me/923013823223?text=Assalam%20o%20Alaikum%20Smile%20Dental%20Clinic%2C%20I%20want%20to%20book%20an%20appointment.%20Service%3A%20%5B%5D%20Preferred%20time%3A%20%5B%5D" target="_blank" rel="noopener">Book on WhatsApp</a>
+              <a class="btn btn-secondary" href="#appointment">Book Form</a>
+            </div>
+          </div>
+          <div class="divider my-5"></div>
+          <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-3">
+            <div class="mini">
+              © <span id="year"></span> Smile Dental Clinic. All rights reserved.
+            </div>
+            <div class="mini">
+              Designed for local searches: Dentist in DHA Karachi • Dental clinic DHA Phase 2 • Teeth whitening Karachi • Dental implants Karachi
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <!-- Floating Buttons (Mobile-first) -->
+  <div class="fab-wrap" aria-hidden="false">
+    <a class="fab fab-wa" href="https://wa.me/923013823223?text=Assalam%20o%20Alaikum%20Smile%20Dental%20Clinic%2C%20I%20want%20to%20book%20an%20appointment.%20Service%3A%20%5B%5D%20Preferred%20time%3A%20%5B%5D" target="_blank" rel="noopener" aria-label="WhatsApp Smile Dental Clinic">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M20 12a8 8 0 0 1-11.8 7L4 20l1-4.2A8 8 0 1 1 20 12Z" stroke="#fff" stroke-width="1.7" stroke-linejoin="round"/>
+        <path d="M9.2 8.8c-.2-.5-.4-.5-.7-.5h-.6c-.2 0-.5.1-.7.4-.2.3-.9.9-.9 2.2s.9 2.5 1 2.6c.1.2 1.7 2.7 4.2 3.7 2 .8 2.4.6 2.8.6.4-.1 1.3-.6 1.5-1.1.2-.5.2-1 .1-1.1-.1-.1-.2-.2-.5-.3l-1.6-.8c-.2-.1-.4-.1-.6.1l-.7.9c-.1.2-.3.2-.5.1-.2-.1-1-.4-1.9-1.3-.7-.6-1.2-1.5-1.4-1.7-.1-.2 0-.4.1-.5l.5-.6c.1-.1.1-.3.2-.4.1-.1 0-.3 0-.5l-.6-1.5Z" fill="#fff" opacity=".92"/>
+      </svg>
+    </a>
+    <a class="fab fab-call" href="tel:+923013823223" aria-label="Call Smile Dental Clinic">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M6.6 10.2c1.4 3 3.8 5.4 6.8 6.8l2.3-2.3c.4-.4 1-.5 1.5-.3 1 .4 2.1.6 3.2.6.8 0 1.5.7 1.5 1.5V20c0 .8-.7 1.5-1.5 1.5C11.3 21.5 2.5 12.7 2.5 2.6 2.5 1.8 3.2 1 4 1h3.4c.8 0 1.5.7 1.5 1.5 0 1.1.2 2.2.6 3.2.2.5.1 1.1-.3 1.5L6.6 10.2Z" stroke="#fff" stroke-width="1.8" stroke-linejoin="round"/>
+      </svg>
+    </a>
+  </div>
+
+  <!-- Sticky bottom CTA bar (Mobile) -->
+  <div class="sticky-cta md:hidden">
+    <div class="container mx-auto px-2">
+      <div class="grid grid-cols-2 gap-2">
+        <a class="btn btn-primary w-full" href="https://wa.me/923013823223?text=Assalam%20o%20Alaikum%20Smile%20Dental%20Clinic%2C%20I%20want%20to%20book%20an%20appointment.%20Service%3A%20%5B%5D%20Preferred%20time%3A%20%5B%5D" target="_blank" rel="noopener" aria-label="Book appointment on WhatsApp (sticky)">
+          WhatsApp
+        </a>
+        <a class="btn btn-secondary w-full" href="tel:+923013823223" aria-label="Call now (sticky)">
+          Call Now
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const $ = (id) => document.getElementById(id);
+
+    function showToast(title, msg){
+      $("toastTitle").textContent = title;
+      $("toastMsg").textContent = msg;
+      $("toast").classList.add("show");
+      window.clearTimeout(window.__toastTimer);
+      window.__toastTimer = window.setTimeout(hideToast, 4200);
+    }
+    function hideToast(){ $("toast").classList.remove("show"); }
+
+    function quickFill(service){
+      const svc = $("service");
+      // Ensure option exists; if not, set to "Not sure..."
+      const options = Array.from(svc.options).map(o => o.value);
+      svc.value = options.includes(service) ? service : "Not sure / Need guidance";
+      $("time").focus({preventScroll:false});
+      document.querySelector("#appointment").scrollIntoView({behavior:"smooth", block:"start"});
+      showToast("Saved", "Service selected. Add your preferred time to book.");
+    }
+
+    // Service buttons auto-fill
+    document.querySelectorAll("[data-service]").forEach(btn=>{
+      btn.addEventListener("click", (e)=>{
+        const s = btn.getAttribute("data-service");
+        const svc = $("service");
+        const options = Array.from(svc.options).map(o => o.value);
+        svc.value = options.includes(s) ? s : "";
+      });
+    });
+
+    // Form submit -> open WhatsApp prefilled (lead capture)
+    $("leadForm").addEventListener("submit", (e)=>{
+      e.preventDefault();
+      const name = $("name").value.trim();
+      const phone = $("phone").value.trim();
+      const service = $("service").value.trim();
+      const time = $("time").value.trim();
+
+      const text =
+        "Assalam o Alaikum Smile Dental Clinic, I want to book an appointment." +
+        "%0AName: " + encodeURIComponent(name) +
+        "%0APhone/WhatsApp: " + encodeURIComponent(phone) +
+        "%0AService Needed: " + encodeURIComponent(service) +
+        "%0APreferred Time: " + encodeURIComponent(time) +
+        "%0ALocation: DHA Phase 2, Karachi";
+
+      const url = "https://wa.me/923013823223?text=" + text;
+
+      // Update secondary WhatsApp link too
+      $("formWhatsApp").href = url;
+
+      window.open(url, "_blank", "noopener");
+      showToast("Sent to WhatsApp", "If WhatsApp didn’t open, tap “Send Details on WhatsApp”.");
+    });
+
+    // Keep footer year current
+    $("year").textContent = new Date().getFullYear();
+
+    // Improve CTA speed: prefill WhatsApp from form on input changes
+    const syncWhatsAppLink = ()=>{
+      const name = encodeURIComponent($("name").value.trim() || "[Name]");
+      const phone = encodeURIComponent($("phone").value.trim() || "[Phone]");
+      const service = encodeURIComponent($("service").value.trim() || "[Service]");
+      const time = encodeURIComponent($("time").value.trim() || "[Preferred time]");
+      const text = "Assalam o Alaikum Smile Dental Clinic, I want to book an appointment." +
+        "%0AName: " + name +
+        "%0APhone/WhatsApp: " + phone +
+        "%0AService Needed: " + service +
+        "%0APreferred Time: " + time +
+        "%0ALocation: DHA Phase 2, Karachi";
+      $("formWhatsApp").href = "https://wa.me/923013823223?text=" + text;
+    };
+    ["name","phone","service","time"].forEach(id=>{
+      $(id).addEventListener("input", syncWhatsAppLink);
+      $(id).addEventListener("change", syncWhatsAppLink);
+    });
+    syncWhatsAppLink();
+  </script>
+</body>
+</html>
